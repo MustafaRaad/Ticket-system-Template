@@ -1,0 +1,53 @@
+.container {
+  border: 1px solid #d7d7d7;
+  border-radius: 15px;
+  margin: 15px auto;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+}
+section {
+  padding: 10px 15px 0px 15px;
+}
+.col-md-6 {
+  align-self: center;
+}
+.header-section {
+  background-image: url("/imgs/header_bg.png");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: padding-box;
+  /* background-color: black; */
+}
+img {
+  border: 1px solid #f1f1f1;
+  border-radius: 10%;
+  margin: auto auto;
+  padding: 0.2rem;
+}
+/* .section2 .title { */
+.title {
+  background-color: lavender;
+  padding: 5px 5px 5px 15px;
+  border-radius: 7px;
+}
+.check {
+  font-size: 10rem;
+}
+footer {
+  margin-top: 50px;
+  background-color: rgb(151, 151, 255);
+  padding: 10px;
+  text-align: center;
+}
+.payment-method-icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 15px;
+}
+@media only screen and (min-width: 1080px) {
+  .container {
+    width: 50%;
+  }
+}
