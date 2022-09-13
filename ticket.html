@@ -10,32 +10,61 @@
       integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+    <style>
+      .container {
+        margin: 15px auto;
+        padding: 0;
+        border: 1px ridge #d7d7d7;
+        border-left: 1px dashed;
+        overflow: hidden;
+        background-color: white;
+      }
+      section {
+        padding: 10px 15px 0px 15px;
+      }
+      .col-md-8,
+      .col-md-6 {
+        align-self: center;
+      }
+      @media only screen and (min-width: 1080px) {
+        .container {
+          width: 50%;
+        }
+      }
+    </style>
   </head>
   <body class="bg-light">
     <div class="container">
       <section
         class="header-section text-center justify-content-center m-auto border-bottom"
       >
-        <img
-          src="./imgs/event.jpg"
-          alt=""
-          width="150"
-          height="150"
-          class="mb-2"
-        />
-        <p>
-            10th conference of the Iraqi fertility society
-            <br />
-            Thursday, Nov 3, 2022, 09:00 am - Friday, Nov 4, 2022, 10:00 pm
-          </p>
+        <div class="row">
+          <div class="col-md-4">
+            <img
+              src="./imgs/event.jpg"
+              alt=""
+              width="150"
+              height="150"
+              class="mb-2"
+            />
+          </div>
+          <div class="col-md-8">
+            <p>
+              10th conference of the Iraqi fertility society
+              <br />
+              Thursday, Nov 3, 2022, 09:00 am - Friday, Nov 4, 2022, 10:00 pm
+            </p>
+          </div>
+        </div>
       </section>
 
       <section>
-        <div class="row p-4">
+        <div class="row">
           <div class="col-md-6 border-end text-center">
             <img src="./imgs/qr_code.png" alt="" width="150" height="150" />
-            <p>7653611701</p>
+            <div>
+              <span>7653611701</span>
+            </div>
           </div>
           <div class="col-md-6">
             <h5>Ticket #1</h5>
