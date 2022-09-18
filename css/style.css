@@ -1,6 +1,4 @@
 .container {
-  border: 1px solid #d7d7d7;
-  border-radius: 15px;
   overflow: hidden;
   background-color: white;
 }
@@ -8,6 +6,7 @@ section {
   padding: 10px 15px 0px 15px;
 }
 .col-md-6 {
+  padding-left: 1rem;
   align-self: center;
 }
 .header-section {
@@ -16,7 +15,7 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
   background-clip: padding-box;
-  /* background-color: black; */
+  padding: 1rem;
 }
 img {
   border: 1px solid #f1f1f1;
@@ -33,7 +32,7 @@ img {
 .check {
   font-size: 10rem;
 }
-footer {
+.footer {
   margin-top: 50px;
   background-color: rgb(151, 151, 255);
   padding: 10px;

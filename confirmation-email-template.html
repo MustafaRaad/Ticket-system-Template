@@ -22,7 +22,7 @@
       background-color: rgba(
         var(--bs-light-rgb),
         var(--bs-bg-opacity)
-      ) !important
+      ) !important;
       -webkit-text-size-adjust: 100%;
       -webkit-tap-highlight-color: transparent;
       --bs-bg-opacity: 1;
@@ -32,8 +32,6 @@
       class="container"
       style="
         box-sizing: border-box;
-        border: 1px solid #d7d7d7;
-        border-radius: 15px;
         overflow: hidden;
         background-color: white;
         --bs-gutter-x: 1.5rem;
@@ -46,22 +44,24 @@
         max-width: 1320px;
       "
     >
-      <section
-        class="header-section text-center justify-content-center m-auto border-bottom"
+      <div
+        class="header-section border-bottom"
         style="
           border-radius: 10px;
+          display: flex;
+          flex-direction: column;
+          align-content: center;
+          justify-content: center;
+          align-items: center;
           box-sizing: border-box;
-          padding: 10px 15px 0px 15px;
           background-image: url('/imgs/header_bg.png');
           background-position: center top;
           background-repeat: no-repeat;
           background-size: cover;
           background-clip: padding-box;
-          text-align: center !important;
-          margin: auto !important;
+          padding: 1rem;
           border-bottom: var(--bs-border-width) var(--bs-border-style)
             var(--bs-border-color) !important;
-          justify-content: center !important;
         "
       >
         <img
@@ -83,7 +83,7 @@
           fertility society. Your registration will be reviewed by the organizer
           for confirmation.
         </p>
-      </section>
+      </div>
       <section
         class="text-center"
         style="
@@ -142,7 +142,7 @@
               width: 50%;
               max-width: 100%;
               padding-right: calc(var(--bs-gutter-x) * 0.5);
-              padding-left: calc(var(--bs-gutter-x) * 0.5);
+              padding-left: 1rem;
               margin-top: var(--bs-gutter-y);
               border-right: var(--bs-border-width) var(--bs-border-style)
                 var(--bs-border-color) !important;
@@ -165,7 +165,7 @@
               width: 50%;
               max-width: 100%;
               padding-right: calc(var(--bs-gutter-x) * 0.5);
-              padding-left: calc(var(--bs-gutter-x) * 0.5);
+              padding-left: 1rem;
               margin-top: var(--bs-gutter-y);
               align-self: center;
               flex: 0 0 auto;
@@ -213,7 +213,7 @@
               width: 50%;
               max-width: 100%;
               padding-right: calc(var(--bs-gutter-x) * 0.5);
-              padding-left: calc(var(--bs-gutter-x) * 0.5);
+              padding-left: 1rem;
               margin-top: var(--bs-gutter-y);
               text-align: center !important;
               border-right: var(--bs-border-width) var(--bs-border-style)
@@ -245,7 +245,7 @@
               width: 50%;
               max-width: 100%;
               padding-right: calc(var(--bs-gutter-x) * 0.5);
-              padding-left: calc(var(--bs-gutter-x) * 0.5);
+              padding-left: 1rem;
               margin-top: var(--bs-gutter-y);
               align-self: center;
               flex: 0 0 auto;
@@ -340,7 +340,8 @@
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
       </section>
-      <footer
+      <div
+        class="footer"
         style="
           border-radius: 10px;
           box-sizing: border-box;
@@ -376,7 +377,7 @@
             "
           />
         </div>
-      </footer>
+      </div>
     </div>
   </body>
 </html>

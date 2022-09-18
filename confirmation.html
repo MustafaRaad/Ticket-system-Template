@@ -3,13 +3,19 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap demo</title>
-    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body class="bg-light">
     <div class="container">
-      <section
-        class="header-section text-center justify-content-center m-auto border-bottom" style="border-radius: 10px;"
+      <div
+        class="header-section border-bottom"
+        style="
+          border-radius: 10px;
+          display: flex;
+          flex-direction: column;
+          align-content: center;
+          justify-content: center;
+          align-items: center;
+        "
       >
         <img
           src="./imgs/event.jpg"
@@ -23,7 +29,7 @@
           fertility society. Your registration will be reviewed by the organizer
           for confirmation.
         </p>
-      </section>
+      </div>
       <section class="text-center">
         <h2 class="display-5">Confirmation</h2>
         <p>Ticket confirmed</p>
@@ -89,7 +95,7 @@
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
       </section>
-      <footer style="border-radius: 10px;" >
+      <div class="footer" style="border-radius: 10px">
         <div
           style="
             border-radius: 50%;
@@ -109,7 +115,7 @@
             style="border: 0px"
           />
         </div>
-      </footer>
+      </div>
     </div>
   </body>
 </html>
