@@ -496,14 +496,14 @@ display-1 {
   border-radius: var(--bs-alert-border-radius);
 }
 .alert-success {
-  --bs-alert-color: #0f5132;
-  --bs-alert-bg: #d1e7dd;
-  --bs-alert-border-color: #badbcc;
+  color: #0f5132;
+  background-color:  #d1e7dd;
+  border-color: #badbcc;
 }
 .alert-danger {
-  --bs-alert-color: #842029;
-  --bs-alert-bg: #f8d7da;
-  --bs-alert-border-color: #f5c2c7;
+  color: #842029;
+  background-color: #f8d7da;
+ border-color: #f5c2c7;
 }
 .mb-2 {
   margin-bottom: 0.4rem !important;
