@@ -3,14 +3,14 @@
   background-color: white;
 }
 section {
-  padding: 10px 15px 0px 15px;
+  padding: 0px 15px 0px 15px;
 }
 .col-md-6 {
   padding-left: 1rem;
   align-self: center;
 }
 .header-section {
-  background-image: url("/imgs/header_bg.png");
+  background-image: url("https://github.com/MustafaRaad/Ticket-system-Template/blob/master/imgs/header_bg.png");
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -31,6 +31,9 @@ img {
 }
 .check {
   font-size: 10rem;
+}
+.text-md{
+  font-size: 1.2rem!important;
 }
 .footer {
   margin-top: 50px;
