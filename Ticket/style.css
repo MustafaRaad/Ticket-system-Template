@@ -1,7 +1,6 @@
 * {
   box-sizing: border-box;
 }
-
 html,
 body {
   height: 100%;
@@ -9,9 +8,8 @@ body {
 }
 
 body {
-  @import url("https://fonts.googleapis.com/css2?family=B612+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
-  font-family: "B612 Mono", monospace;
-  background-color: #3f32e5;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #013d69;
   height: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -29,15 +27,18 @@ body {
   text-align: center;
   align-items: center;
   align-content: center;
-  justify-content: center;
-  font-size: 1.5rem;
-  border: 1px solid #d0d0d0;
-  font-weight: 600;
+  justify-content: space-around;
+  padding: 10px;
 }
-.header-section > span {
-  border-left: 1px solid;
-  padding-left: 5px;
-  margin-left: 2px;
+.header-section div{
+  padding: 5px;
+}
+.header-section span {
+  padding: 5px;
+  font-weight: 300;
+  font-size: 1.5rem;
+  background-color: #1c1c1c;
+  color: #fff;
 }
 .ticket-system .top {
   display: flex;
@@ -69,7 +70,7 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  transform: translateY(-510px);
+  transform: translateY(-800px);
   animation-duration: 2.5s;
   animation-delay: 500ms;
   animation-name: print;
@@ -85,7 +86,7 @@ body {
   box-shadow: 1px 3px 8px 3px rgba(0, 0, 0, 0.2);
 }
 .ticket-system .receipts .receipt .header-logo {
-  max-width: 100px;
+  width: 100px;
 }
 .ticket-system .receipts .receipt .details {
   display: flex;
@@ -97,12 +98,7 @@ body {
   display: flex;
   flex-direction: column;
 }
-.ticket-system .receipts .receipt .details .item:nth-child(odd) {
-  min-width: 65%;
-}
-.ticket-system .receipts .receipt .details .item:nth-child(even) {
-  min-width: 35%;
-}
+
 .ticket-system .receipts .receipt .details .item span {
   font-size: 1em;
   color: rgba(28, 28, 28, 0.7);
@@ -134,7 +130,7 @@ body {
 }
 .ticket-system .receipts .receipt.qr-code::before {
   content: "";
-  background: linear-gradient(to right, #fff 50%, #3f32e5 50%);
+  background: linear-gradient(to right, #fff 50%, #013d69 50%);
   background-size: 22px 4px, 100% 4px;
   height: 4px;
   width: 90%;
@@ -146,8 +142,17 @@ body {
   margin: auto;
 }
 .ticket-system .receipts .receipt.qr-code .qr {
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 80%;
+}
+.qr-code .item {
+  align-items: center;
+}
+.qr-code .item:first-child {
+  width: 75%;
+}
+.qr-code .item img {
+  width: 10rem;
 }
 .ticket-system .receipts .receipt.qr-code .description {
   margin-left: 20px;
@@ -160,49 +165,82 @@ body {
   margin: 0;
   font-weight: 400;
 }
-
 @keyframes print {
   0% {
-    transform: translateY(-510px);
+    transform: translateY(-800px);
   }
-  35% {
-    transform: translateY(-395px);
+  20% {
+    transform: translateY(-600px);
   }
-  70% {
-    transform: translateY(-140px);
+  40% {
+    transform: translateY(-400px);
+  }
+  60% {
+    transform: translateY(-200px);
+  }
+  80% {
+    transform: translateY(-100px);
   }
   100% {
     transform: translateY(0);
   }
 }
 
-@media (min-width: 576px) {
-  .ticket-system {
-    max-width: 100%;
-    width: 100%;
-  }
-  /* .ticket-system .receipts .receipt.qr-code .qr {
-  width: 500px;
-  height: 100px;
-} */
+@media (max-width: 1023px) {
+  .ticket-system .receipts {
+  transform: translateY(-1500px);
 }
-@media (min-width: 768px) {
+  @keyframes print {
+  0% {
+    transform: translateY(-1500px);
+  }
+  40% {
+    transform: translateY(-1000px);
+  }
+  80% {
+    transform: translateY(-500px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
   .ticket-system {
     max-width: 90%;
   }
+
+  .ticket-system .receipts .receipt .details .item {
+    width: 100%;
+  }
+  * {
+    font-size: calc(1rem + 1.5vw);
+  }
+  .ticket-system .receipts .receipt.qr-code .item {
+    width: 100%;
+  }
+  .details > .item {
+    margin-bottom: 0.7em;
+  }
+  .header-section {
+    flex-direction: column;
+  }
+  .header-section > div {
+    width: 100%;
+  }
+  .ticket-system .receipts .receipt .header-logo {
+    width: 250px;
+  }
 }
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
   .ticket-system {
     max-width: 600px;
   }
-}
-@media (min-width: 1200px) {
-  .ticket-system {
-    max-width: 600px;
+  .ticket-system .receipts .receipt .details .item span {
+    font-size: calc(100%+2em);
   }
-}
-@media (min-width: 1400px) {
-  .ticket-system {
-    max-width: 600px;
+  .ticket-system .receipts .receipt .details .item:nth-child(odd) {
+    width: 65%;
+  }
+  .ticket-system .receipts .receipt .details .item:nth-child(even) {
+    width: 35%;
   }
 }
